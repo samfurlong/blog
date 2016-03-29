@@ -1,0 +1,25 @@
+{
+  "name": "samuelfurlongblog",
+  "version": "1.0.0",
+  "description": "Personal Blog Jekyll Site of Samuel Furlong",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samfurlong/blog.git"
+  },
+  "author": "Samuel Furlong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samfurlong/blog/issues"
+  },
+  "homepage": "https://github.com/samfurlong/blog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "lodash": "^4.6.1"
+  }
+}

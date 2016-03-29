@@ -10,10 +10,12 @@ title: Samuel Furlong
 email: samfurlong1@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Personal Portfolio Site of Samuel Furlong, Developer | Designer
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://samfurlong.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://samfurlong.github.io/blog" # the base hostname & protocol for your site
 twitter_username: Sam_Furlong92
 github_username:  samfurlong
 
 # Build settings
 markdown: kramdown
+
+exclude: [node_modules, gulpfile.js, package.json]
