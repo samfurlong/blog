@@ -1,0 +1,49 @@
+// Inputs
+input, textarea{
+	border: 2px $dark solid;
+	border-radius: 3px;
+	width: 100%;
+	margin-bottom: $margin-md;
+	font-weight: 300;
+	padding-left: em(10);
+	padding-right: em(10);
+	box-sizing: border-box;
+
+	&::placeholder{
+		color: $dark-light;
+		font-weight: 300;
+	}
+
+	&:focus, &:active {
+		outline-color: $blue;
+	}
+}
+
+input{
+	height: $form-input-height;
+}
+
+textarea{
+	padding-top: em(10);
+	padding-bottom: em(10);
+	height: $form-textarea-height;
+}
+
+.submit-button{
+	outline: none;
+	font-size: $font-px-sm;
+	padding-top: em(5);
+	color: $white;
+	background: $blue;
+	border-radius: 3px;
+	border: none;
+	width: 40%;
+	display: block;
+	float: right;
+	@extend %outer-shadow;
+
+	&:focus, &:active, &:hover {
+		background: $blue-light;
+	}
+
+}

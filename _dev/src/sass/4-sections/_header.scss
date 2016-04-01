@@ -1,0 +1,84 @@
+.header{
+	background: $dark-opacity-darker;
+	height: $header-height;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	.header-wrap{
+		height: $header-height;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	} // .header-wrap
+
+	.header-logo{
+		cursor: pointer;
+		display: inline-block;
+		float: left;
+		width: $header-logo-width;
+		height: $header-logo-height;
+		margin-top: em(10);
+		margin-left: em(15);
+		img{
+			width: $header-logo-width;
+			height: $header-logo-height;
+		} // img
+
+		&:hover{
+			opacity: $font-link-opacity;
+		} // &:hover
+
+	} // .header-logo
+
+	.header-menu{
+		display: inline-block;
+		float: right;
+		padding-top: $header-height-padding-top;
+		margin-right: em(15);
+
+		.header-menu-item{
+			display: inline-block;
+			float: left;
+
+
+			padding-right: em(13);
+			margin: em(12) em(11) 0 0;
+			border-right: 2px $white solid;
+
+			a{
+				@extend %font-header;
+				cursor: pointer;
+
+				&:hover{
+					opacity: $font-link-opacity;
+				} // &:hover
+			} // a
+
+			// About Button
+			&:first-child{
+				@media (max-width: $bp-mobile-landscape ){
+					display: none;
+				} // max width
+			} // &:first-child
+
+			// Linkedin Button
+			&:last-child{
+				padding: 0;
+				padding-top: em(2);
+				margin: 0;
+				border: none;
+
+				img{
+					// margin-top: em(2);
+					width: em(36);
+					height: em(36);
+				} // img
+			} // &:last-child
+			
+		} // .header-menu-item
+
+	} // .header-menu
+} // .header

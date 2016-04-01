@@ -1,0 +1,31 @@
+.footer{
+	background: $dark;
+	height: $header-height;
+	width: 100%;
+
+	.footer-wrap{
+		height: $header-height;
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+	} // .header-wrap
+
+	p{
+		margin: 0;
+		margin-top: em(12);
+		display: block;
+		float: right;
+		@extend %font-header;
+
+		a{
+			@extend %font-header;
+			text-decoration: underline;
+
+			&:hover{
+				opacity: $font-link-opacity;
+			}
+		}
+
+	}
+
+}

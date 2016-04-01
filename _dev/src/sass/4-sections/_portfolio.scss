@@ -1,0 +1,26 @@
+#portfolio{
+	@extend %section-wrap;
+	padding-bottom: $margin-lg;
+}
+
+.case-study-item{
+	display: block;
+	margin: 0 auto;
+	width: 220px;
+	height: 200px;
+	background: $white;
+	border-radius: 2px;
+	padding-top: 10px;
+	@extend %outer-shadow;
+
+}	
+
+.case-study-item-top{
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+	background: red;
+}
+.case-study-item-bottom{
+
+}

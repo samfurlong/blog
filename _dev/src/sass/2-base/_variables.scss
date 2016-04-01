@@ -1,0 +1,81 @@
+// 
+// Colors
+// 
+$white: #FFFFFF;
+$dark: #333333;
+$dark-opacity: rgba(51,51,51,0.8);
+$dark-opacity-darker: rgba(51,51,51,0.9);
+$dark-light: #666666;
+$grey: #F5F4F4;
+$blue: #408AC3;
+$blue-light: darken($blue, 10%);
+$linkedin-blue: #007bb5;
+
+// 
+// Padding and Margins
+// 
+$margin-md: em(20);
+$margin-lg: em(30);
+
+// 
+// Breakpoints
+// 
+$bp-mobile-landscape: em(480);
+$bp-mobile-landscape-lg: em(620);
+$bp-tablet: em(800);
+
+// 
+// Images
+// 
+$img-header-bg: url("/img/Header-BG.png");
+$img-personal-logo: url("/img/Personal-Logo.svg");
+
+// 
+// Fonts
+// 
+$font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-bold: HelveticaNeue-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-color-main: $dark;
+$font-color-secondary: $dark-light;
+$font-color-link: $blue;
+$font-link-opacity: 0.8;
+
+
+
+// Pixle Sizes (converted to em)
+$font-px-xxsm: em(8);
+$font-px-xsm: em(10);
+$font-px-sm: em(14);
+$font-px-md: em(18);
+$font-px-lg: em(20);
+$font-px-xlg: em(30);
+$font-px-xxlg: em(36);
+
+// 
+// Forms
+// 
+$form-input-height: em(36);
+$form-textarea-height: em(146);
+
+// 
+// Header
+// 
+$header-height: em(56);
+$header-height-padding-top: em(6);
+$header-logo-width: em(50);
+$header-logo-height: em(38);
+
+
+// 
+// Hero
+// 
+$hero-height-mobile: em(380);
+$hero-height-tablet: em(400);
+$hero-height-desktop: em(500);
+
+// 
+// About
+// 
+$avatar-size-sm: em(150);
+

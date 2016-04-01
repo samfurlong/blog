@@ -1,0 +1,32 @@
+/*	Typography presets
+  ------------------------------------	*/
+
+h1{
+	@extend %font-h1;
+}
+
+h2{
+	@extend %font-h2;
+}
+
+h3{
+	@extend %font-h4;
+	text-align: center;
+	padding-top: $margin-md;
+}
+
+p{
+	@extend %font-intro-text;
+}
+
+p .small-p{
+	@extend %font-body;
+}
+
+.section-alt{
+	background: $grey;
+}
+
+textarea {
+	resize: none;
+}

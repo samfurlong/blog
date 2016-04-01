@@ -1,0 +1,35 @@
+#contact{
+	@extend %section-wrap;
+	max-width: em(700);
+	margin-bottom: $margin-lg;
+	padding-bottom: $margin-lg;
+
+	p{
+		text-align: center;
+
+		a{
+			color: $blue;
+			&:hover{
+				color: $blue-light;
+			}
+		}
+	
+	}
+
+	@media (min-width:  $bp-mobile-landscape-lg ){
+		.input-name, .input-email{
+			width: 49%;
+			display: inline-block;
+
+		}
+
+		.input-name{
+			float: left;
+		}
+
+		.input-email{
+			float: right;
+		}
+	}
+
+}

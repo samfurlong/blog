@@ -1,0 +1,18 @@
+#about{
+	@extend %section-wrap;
+	.about-avatar{
+		height: $avatar-size-sm;
+		width: $avatar-size-sm;
+		background: green;
+		margin: 0 auto;
+		border-radius: 50%;
+		@extend %outer-shadow;
+		border: 2px $dark solid
+	}
+
+	p{
+		text-align: center;
+	}
+
+}
+

@@ -18,4 +18,9 @@ github_username:  samfurlong
 # Build settings
 markdown: kramdown
 
-exclude: [node_modules, gulpfile.js, package.json]
+exclude: [
+  '_dev',
+  'node_modules',
+  'gulpfile.js',
+  'package.json'
+  ]

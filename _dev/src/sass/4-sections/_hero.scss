@@ -1,0 +1,58 @@
+.hero{
+	@extend %hero-bg-image;
+	@extend %hero-position-mobile;
+	
+
+	.hero-overlay{
+		background: $dark-opacity;
+		@extend %hero-position-mobile;
+
+	
+		.hero-main-logo{
+			width: em(272);
+			height: em(116);
+			margin: em(140) auto;
+			@extend %hero-main-logo;
+		}
+	}
+}
+
+.after-hero{
+	margin-top: $hero-height-mobile;
+}
+
+@media (min-width:  $bp-mobile-landscape-lg ){
+	.hero{
+		height: $hero-height-tablet;
+		.hero-overlay{
+			height: $hero-height-tablet;
+
+			.hero-main-logo{
+				width: em(450);
+				height: em(190);
+				margin: em(120) auto;
+			}
+		}
+	}
+	.after-hero{
+		margin-top: $hero-height-tablet;
+	}
+} // max width
+
+@media (min-width: $bp-tablet ){
+	.hero{
+		height: $hero-height-desktop;
+		.hero-overlay{
+			height: $hero-height-desktop;
+
+			.hero-main-logo{
+				width: em(610);
+				height: em(250);
+				margin: em(130) auto;
+			}
+		}
+	}
+	.after-hero{
+		margin-top: $hero-height-desktop;
+	}
+} // max width
