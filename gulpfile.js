@@ -6,47 +6,80 @@ var gutil = require('gulp-util');
 var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
+var imageMin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 var prefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var cp = require('child_process');
 
-var base_path = './';
-var src = base_path + '_dev/src';
-var dist = base_path + 'assets';
-var paths = {
-    js: src + '/js/*.js',
-    scss: [
-      src +'/sass/*.scss',
-      src +'/sass/**/* .scss',
-      src +'/sass/**/**/*.scss'
-    ],
-    jekyll: [
-      'index.html',
-      '_posts/*',
-      '_layouts/*',
-      '_includes/*' ,
-      'assets/*',
-      'assets/**/*'
-    ]
-  };
+// Declare the paths
+// Glob patterns by file type
+paths = {};
+paths.allFilesPattern = '/**/*.*';
+paths.sassPattern = '/**/*.scss';
+paths.jsPattern = '/**/*.js';
+paths.imagePattern = '/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)';
+paths.markdownPattern = '/**/*.+(md|MD|markdown|MARKDOWN)';
+paths.htmlPattern = '/**/*.html';
+paths.xmlPattern = '/**/*.xml';
+
+paths.base_path = './';
+paths.src = paths.base_path + '_dev/src';
+paths.dist = paths.base_path + 'assets';
+
+// JS Paths
+paths.js = paths.src + '/js/*.js';
+// Sass Paths
+paths.scssSrc = paths.src + '/sass' + paths.sassPattern;
+paths.scssDist = paths.dist + '/css';
+// Images Paths
+paths.imagesSrc = paths.src + '/images' + paths.imagePattern;
+paths.imagesDest = paths.dist + '/images';
+// jekyll Paths
+paths.browser_sync_files = '_site' + paths.allFilesPattern;
+paths.jekyll = [
+  'index.html',
+  '_posts/*',
+  '_layouts/*',
+  '_includes/*',
+  'assets/*',
+  'assets/**/*'
+];
 
 
 // Compile sass to css
-gulp.task('compile-sass', function(){
-  return gulp.src(paths.scss)
+gulp.task('compile-sass', function() {
+  return gulp.src(paths.scssSrc)
     .pipe(plumber(function(error) {
-        gutil.log(gutil.colors.red(error.message));
-        gulp.task('compile-sass').emit('end');
+      gutil.log(gutil.colors.red(error.message));
+      gulp.task('compile-sass').emit('end');
     }))
     .pipe(sass())
-    .pipe(prefixer('last 3 versions', 'ie 9'))
+    .pipe(prefixer())
     .pipe(minifyCSS())
-    .pipe(rename({dirname: dist + '/css'}))
+    .pipe(rename({
+      dirname: paths.scssDist
+    }))
     .pipe(gulp.dest('./'));
 });
 
+// Creates optimized versions of images,
+// then outputs to appropriate location(s)
+gulp.task('compile-images', function() {
+  return gulp.src(paths.imagesSrc)
+    .pipe(imageMin({
+  			progressive: true,
+  			svgoPlugins: [{removeViewBox: false}],
+  			use: [pngquant()]
+  		}))
+    .pipe(gulp.dest(paths.imagesDest))
+    .pipe(browserSync.stream())
+    .on('error', gutil.log);
+});
+
 gulp.task('watch', function() {
-  gulp.watch(paths.scss, ['compile-sass']);
+  gulp.watch(paths.scssSrc, ['compile-sass']);
+  gulp.watch(paths.imagesSrc, ['compile-images']);
 });
 
 // Task for building blog when something changed:
@@ -55,10 +88,14 @@ gulp.task('watch', function() {
 gulp.task('jekyll-build', shell.task(['jekyll build --watch']));
 
 // Task for serving blog with Browsersync
-gulp.task('browsersync-serve', function () {
-    browserSync.init({server: {baseDir: '_site/'}});
-    // Reloads page when some of the already built files changed:
-    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
+gulp.task('browsersync-serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: '_site/'
+    }
+  });
+  // Reloads page when some of the already built files changed:
+  gulp.watch(paths.browser_sync_files).on('change', browserSync.reload);
 });
 
 // Run Jekll Build and Browsersync
