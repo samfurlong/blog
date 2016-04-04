@@ -1,6 +1,6 @@
-// 
+//
 // Colors
-// 
+//
 $white: #FFFFFF;
 $dark: #333333;
 $dark-opacity: rgba(51,51,51,0.8);
@@ -11,28 +11,30 @@ $blue: #408AC3;
 $blue-light: darken($blue, 10%);
 $linkedin-blue: #007bb5;
 
-// 
+//
 // Padding and Margins
-// 
+//
 $margin-md: em(20);
 $margin-lg: em(30);
 
-// 
+//
 // Breakpoints
-// 
+//
 $bp-mobile-landscape: em(480);
 $bp-mobile-landscape-lg: em(620);
 $bp-tablet: em(800);
 
-// 
+//
 // Images
-// 
-$img-header-bg: url("/img/Header-BG.png");
-$img-personal-logo: url("/img/Personal-Logo.svg");
+//
+$img-path: "/assets/images/";
+$img-header-bg: url($img-path + "Header-Bg.jpg");
+// /Users/samfurlong/www/personal_projects/samfurlong-com/v2/_dev/src/images/Header-Bg.jpg
+$img-personal-logo: url($img-path + "Personal-Logo.svg");
 
-// 
+//
 // Fonts
-// 
+//
 $font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-bold: HelveticaNeue-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -52,30 +54,29 @@ $font-px-lg: em(20);
 $font-px-xlg: em(30);
 $font-px-xxlg: em(36);
 
-// 
+//
 // Forms
-// 
+//
 $form-input-height: em(36);
 $form-textarea-height: em(146);
 
-// 
+//
 // Header
-// 
+//
 $header-height: em(56);
 $header-height-padding-top: em(6);
 $header-logo-width: em(50);
 $header-logo-height: em(38);
 
 
-// 
+//
 // Hero
-// 
+//
 $hero-height-mobile: em(380);
 $hero-height-tablet: em(400);
 $hero-height-desktop: em(500);
 
-// 
+//
 // About
-// 
+//
 $avatar-size-sm: em(150);
-

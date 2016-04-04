@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="274px" height="116px" viewBox="0 0 274 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Personal Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-Portrait" sketch:type="MSArtboardGroup" transform="translate(-22.000000, -77.000000)">
+            <g id="Head" sketch:type="MSLayerGroup" transform="translate(-200.000000, 0.000000)">
+                <g id="Personal-Logo" transform="translate(224.000000, 79.000000)">
+                    <text id="Samuel-Furlong" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="36" font-weight="bold" sketch:alignment="middle" fill="#FFFFFF">
+                        <tspan x="1.36" y="82">Samuel Furlong</tspan>
+                    </text>
+                    <g id="Logo-Header" transform="translate(65.000000, 0.000000)" stroke="#FFFFFF" sketch:type="MSShapeGroup">
+                        <path d="M0,41 L144,41" id="Line" stroke-width="2" stroke-linecap="square"></path>
+                        <g id="Mountain-Logo" transform="translate(52.000000, 0.000000)">
+                            <path d="M22.781529,29.5655692 L11.515346,10.296875 L0.486049107,29.3702567 L39.5181362,29.2550223 L22.891183,0.419642857 L14.3030133,14.6598772" id="Path-8"></path>
+                            <path d="M18.3306362,7.84263392 L20.8422154,7.17996652 L21.2875279,10.1215123 L23.1142578,6.94489397 L25.4524275,11.476981 L25.8359375,7.84263393 L27.3533761,8.11481585" id="Path-9"></path>
+                        </g>
+                    </g>
+                    <g id="Logo-Footer" transform="translate(11.000000, 96.000000)">
+                        <g id="Left-Lines" transform="translate(0.000000, 3.000000)" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup">
+                            <path d="M0.5,1 L52.5,1" id="Line"></path>
+                            <path d="M20,4 L52.5,4" id="Line"></path>
+                        </g>
+                        <g id="Right-Lines" transform="translate(222.500000, 5.500000) scale(-1, 1) translate(-222.500000, -5.500000) translate(196.000000, 3.000000)" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup">
+                            <path d="M0.5,1 L52.5,1" id="Line"></path>
+                            <path d="M20,4 L52.5,4" id="Line"></path>
+                        </g>
+                        <text id="Designer-|-Developer" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="10" font-weight="bold" sketch:alignment="middle" letter-spacing="1" fill="#FFFFFF">
+                            <tspan x="65.46" y="10">Designer | Develope</tspan>
+                            <tspan x="179.65" y="10">r</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
