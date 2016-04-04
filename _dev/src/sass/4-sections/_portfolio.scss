@@ -11,7 +11,7 @@
 	background: $white;
 	border-radius: 2px;
 	padding-top: 10px;
-	@extend %outer-shadow;
+	@extend %outer-shadow-hover;
 
 }
 
@@ -20,7 +20,4 @@
 	height: 150px;
 	margin: 0 auto;
 	background: red;
-}
-.case-study-item-bottom{
-
 }

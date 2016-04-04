@@ -40,7 +40,7 @@ textarea{
 	width: 40%;
 	display: block;
 	float: right;
-	@extend %outer-shadow;
+	@extend %outer-shadow-hover;
 
 	&:focus, &:active, &:hover {
 		background: $blue-light;
