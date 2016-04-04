@@ -1,4 +1,4 @@
-#contact{
+#contact-wrap{
 	@extend %section-wrap;
 	max-width: em(700);
 	margin-bottom: $margin-lg;
@@ -13,7 +13,7 @@
 				color: $blue-light;
 			}
 		}
-	
+
 	}
 
 	@media (min-width:  $bp-mobile-landscape-lg ){

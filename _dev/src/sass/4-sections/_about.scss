@@ -1,4 +1,4 @@
-#about{
+#about-wrap{
 	@extend %section-wrap;
 	.about-avatar{
 		height: $avatar-size-sm;
@@ -15,4 +15,3 @@
 	}
 
 }
-

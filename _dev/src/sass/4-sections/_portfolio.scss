@@ -1,4 +1,4 @@
-#portfolio{
+#portfolio-wrap{
 	@extend %section-wrap;
 	padding-bottom: $margin-lg;
 }
@@ -13,7 +13,7 @@
 	padding-top: 10px;
 	@extend %outer-shadow;
 
-}	
+}
 
 .case-study-item-top{
 	width: 200px;
