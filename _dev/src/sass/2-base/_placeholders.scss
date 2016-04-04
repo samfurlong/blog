@@ -1,9 +1,9 @@
-// 
+//
 // Font
-// 
+//
 %font-header {
   font-family: $font-family;
-	font-size: $font-px-md;
+	font-size: $font-px-sm;
 	color: $white;
 	line-height: em(20);
 	text-decoration: none;
@@ -67,8 +67,8 @@
 }
 
 //
-// 
-// 
+//
+//
 %section-wrap {
 	width: 90%;
 	max-width: 960px;
@@ -79,28 +79,28 @@
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
 }
 
-// 
+//
 // Hero
-// 
+//
 %hero-bg-image {
 	background-image: $img-header-bg;
 	background-repeat: no-repeat, no-repeat;
 	background-size:  cover;
-	background-position: 50% 50%;	
+	background-position: 50% 50%;
 }
 
 %hero-main-logo {
 	background-image: $img-personal-logo;
 	background-repeat: no-repeat, no-repeat;
 	background-size:  cover;
-	background-position: 50% 50%;	
+	background-position: 50% 50%;
 }
 
 %hero-position-mobile {
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;	
+	right: 0;
 	height: $hero-height-mobile;
-	
+
 }

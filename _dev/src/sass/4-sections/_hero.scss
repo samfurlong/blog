@@ -1,13 +1,13 @@
 .hero{
 	@extend %hero-bg-image;
 	@extend %hero-position-mobile;
-	
+
 
 	.hero-overlay{
 		background: $dark-opacity;
 		@extend %hero-position-mobile;
 
-	
+
 		.hero-main-logo{
 			width: em(272);
 			height: em(116);

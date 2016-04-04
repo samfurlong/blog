@@ -20,7 +20,7 @@
 		float: left;
 		width: $header-logo-width;
 		height: $header-logo-height;
-		margin-top: em(10);
+		margin-top: em(14);
 		margin-left: em(15);
 		img{
 			width: $header-logo-width;
@@ -77,7 +77,7 @@
 					height: em(36);
 				} // img
 			} // &:last-child
-			
+
 		} // .header-menu-item
 
 	} // .header-menu

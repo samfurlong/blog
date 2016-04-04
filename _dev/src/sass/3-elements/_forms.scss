@@ -4,14 +4,14 @@ input, textarea{
 	border-radius: 3px;
 	width: 100%;
 	margin-bottom: $margin-md;
-	font-weight: 300;
+	font-weight: 400;
 	padding-left: em(10);
 	padding-right: em(10);
 	box-sizing: border-box;
 
 	&::placeholder{
 		color: $dark-light;
-		font-weight: 300;
+		font-weight: 400;
 	}
 
 	&:focus, &:active {

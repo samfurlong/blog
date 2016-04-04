@@ -18,6 +18,11 @@ $margin-md: em(20);
 $margin-lg: em(30);
 
 //
+// Sizes
+//
+$copy-width: em(550);
+
+//
 // Breakpoints
 //
 $bp-mobile-landscape: em(480);
@@ -29,8 +34,8 @@ $bp-tablet: em(800);
 //
 $img-path: "/assets/images/";
 $img-header-bg: url($img-path + "Header-Bg.jpg");
-// /Users/samfurlong/www/personal_projects/samfurlong-com/v2/_dev/src/images/Header-Bg.jpg
 $img-personal-logo: url($img-path + "Personal-Logo.svg");
+$img-personal-avatar: url($img-path + "sam_furlong_picture.jpg");
 
 //
 // Fonts
@@ -46,25 +51,25 @@ $font-link-opacity: 0.8;
 
 
 // Pixle Sizes (converted to em)
-$font-px-xxsm: em(8);
-$font-px-xsm: em(10);
-$font-px-sm: em(14);
-$font-px-md: em(18);
-$font-px-lg: em(20);
-$font-px-xlg: em(30);
-$font-px-xxlg: em(36);
+$font-px-xxsm: em(10);
+$font-px-xsm: em(14);
+$font-px-sm: em(18);
+$font-px-md: em(20);
+$font-px-lg: em(30);
+$font-px-xlg: em(36);
+$font-px-xxlg: em(46);
 
 //
 // Forms
 //
-$form-input-height: em(36);
-$form-textarea-height: em(146);
+$form-input-height: em(42);
+$form-textarea-height: em(156);
 
 //
 // Header
 //
-$header-height: em(56);
-$header-height-padding-top: em(6);
+$header-height: em(64);
+$header-height-padding-top: em(12);
 $header-logo-width: em(50);
 $header-logo-height: em(38);
 
@@ -79,4 +84,4 @@ $hero-height-desktop: em(500);
 //
 // About
 //
-$avatar-size-sm: em(150);
+$avatar-size-sm: em(220);
