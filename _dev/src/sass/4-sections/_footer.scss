@@ -1,31 +1,28 @@
-.footer{
+footer{
 	background: $dark;
 	height: $header-height;
 	width: 100%;
 
 	.footer-wrap{
-		height: $header-height;
-		width: 90%;
-		max-width: 1000px;
 		margin: 0 auto;
-	} // .header-wrap
+		width: 90%;
+		height: $header-height;
 
-	p{
-		margin: 0;
-		margin-top: em(12);
-		display: block;
-		float: right;
-		@extend %font-header;
-
-		a{
+		.footer-text{
+			padding-top: em(17);
 			@extend %font-header;
-			text-decoration: underline;
+			width: em(210);
+			margin: 0 auto;
 
-			&:hover{
-				opacity: $font-link-opacity;
+			a{
+				@extend %font-header;
+				text-decoration: underline;
+
+				&:hover{
+					opacity: $font-link-opacity;
+				}
 			}
 		}
-
 	}
 
 }
