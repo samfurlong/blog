@@ -110,5 +110,35 @@
 	left: 0;
 	right: 0;
 	height: $hero-height-mobile;
+}
 
+%copy-positioning {
+  width: 90%;
+  max-width: $copy-width;
+  margin: $margin-lg auto;
+}
+
+
+// flex-grid
+%flex-grid-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100vw;
+	font-size: 0;
+
+  @supports not (flex-wrap: wrap) {
+		display: block;
+  }
+}
+
+%flex-grid-item {
+
+  width: 33.3%;
+	transition: .8s opacity;
+
+  @supports not (flex-wrap: wrap) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }

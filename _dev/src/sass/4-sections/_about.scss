@@ -3,7 +3,12 @@
 	.about-avatar{
 		height: $avatar-size-sm;
 		width: $avatar-size-sm;
-		background: green;
+
+		background-image: $img-personal-avatar;
+		background-repeat: no-repeat, no-repeat;
+		background-size:  cover;
+		background-position: 50% 50%;
+
 		margin: 0 auto;
 		border-radius: 50%;
 		@extend %outer-shadow;
@@ -11,9 +16,7 @@
 	}
 
 	p{
-		width: 90%;
-		max-width: $copy-width;
-		margin: $margin-md auto;
+		@extend %copy-positioning;
 	}
 
 }
