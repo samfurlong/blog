@@ -1,5 +1,6 @@
 var Masonry = require('masonry-layout');
-var msnry = new Masonry( '.grid', {
-  itemSelector: '.grid-item',
-  columnWidth: 200
+
+var portfolio_case_study_masonry = new Masonry( '.case-study-grid', {
+  itemSelector: '.case-study-item',
+  fitWidth: true
 });

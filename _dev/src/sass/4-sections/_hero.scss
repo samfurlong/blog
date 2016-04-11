@@ -9,7 +9,8 @@
 
 
 		.hero-main-logo{
-			width: em(272);
+			// background-color: red;
+			width: em(292);
 			height: em(116);
 			margin: em(140) auto;
 			@extend %hero-main-logo;
@@ -28,7 +29,7 @@
 			height: $hero-height-tablet;
 
 			.hero-main-logo{
-				width: em(450);
+				width: em(480);
 				height: em(190);
 				margin: em(120) auto;
 			}
@@ -46,7 +47,7 @@
 			height: $hero-height-desktop;
 
 			.hero-main-logo{
-				width: em(610);
+				width: em(625);
 				height: em(250);
 				margin: em(130) auto;
 			}
