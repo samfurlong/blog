@@ -6,7 +6,7 @@ $dark: #333333;
 $dark-opacity: rgba(51,51,51,0.8);
 $dark-opacity-darker: rgba(51,51,51,0.9);
 $dark-light: #666666;
-$grey: #F5F4F4;
+$grey: #E8E8E8;
 $blue: #408AC3;
 $blue-light: darken($blue, 10%);
 $linkedin-blue: #007bb5;
@@ -35,7 +35,7 @@ $bp-tablet: em(800);
 $img-path: "/assets/images/";
 $img-header-bg: url($img-path + "Header-Bg.jpg");
 $img-personal-logo: url($img-path + "Personal-Logo.svg");
-$img-personal-avatar: url($img-path + "sam_furlong_picture.jpg");
+$img-personal-avatar: url($img-path + "sam_furlong_avatar.png");
 
 //
 // Fonts

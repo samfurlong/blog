@@ -1,0 +1,31 @@
+#contact-wrap{
+	// @extend %section-wrap;
+	width: 100%;
+  background-color: $blue;
+	// max-width: em(700);
+	// margin-bottom: $margin-lg;
+  margin: 0;
+	padding-bottom: $margin-lg;
+
+	p{
+		text-align: center;
+    font-size: em(44);
+	}
+
+	@media (min-width:  $bp-mobile-landscape-lg ){
+		.input-name, .input-email{
+			width: 49%;
+			display: inline-block;
+
+		}
+
+		.input-name{
+			float: left;
+		}
+
+		.input-email{
+			float: right;
+		}
+	}
+
+}
