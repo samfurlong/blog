@@ -30,3 +30,7 @@ p .small-p{
 textarea {
 	resize: none;
 }
+
+::selection {
+  background: $blue-select;
+}

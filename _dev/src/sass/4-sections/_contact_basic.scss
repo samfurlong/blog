@@ -1,31 +1,41 @@
 #contact-wrap{
-	// @extend %section-wrap;
-	width: 100%;
-  background-color: $blue;
-	// max-width: em(700);
-	// margin-bottom: $margin-lg;
-  margin: 0;
-	padding-bottom: $margin-lg;
+	@extend %bg-image;
+	background-image: $img-bg-copy-book-map;
 
-	p{
-		text-align: center;
-    font-size: em(44);
+	.contact-overlay{
+		width: 100%;
+		background: $dark-opacity;
+		position: absolute;
 	}
 
-	@media (min-width:  $bp-mobile-landscape-lg ){
-		.input-name, .input-email{
-			width: 49%;
-			display: inline-block;
+	p{
+		margin: 0;
+		color: $white;
+		text-align: center;
+	}
 
-		}
+	h3{
+		color: $white;
 
-		.input-name{
-			float: left;
-		}
+	}
 
-		.input-email{
-			float: right;
-		}
+	//
+	// use $contact-basic-breakpoint-lookup to loop through the
+	// breakpoints in (mobile first)
+	//
+	@each $key, $value in $contact-basic-breakpoint-lookup{
+	  // Find the breakpoint
+	  @media (min-width: map-get($value, 'breakpoint') ){
+	    // update the p to the right font-size
+	    p{
+	    	font-size: map-get($value, 'font-size');
+	    }
+	    // update the hieght
+	    height: map-get($value, 'height');
+	    .contact-overlay{
+	    	height: map-get($value, 'height');
+	    }
+	  }
 	}
 
 }

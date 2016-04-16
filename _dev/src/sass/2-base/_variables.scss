@@ -10,6 +10,8 @@ $grey: #E8E8E8;
 $blue: #408AC3;
 $blue-light: darken($blue, 10%);
 $linkedin-blue: #007bb5;
+$blue-select: lighten($blue, 30%);
+
 
 //
 // Padding and Margins
@@ -36,6 +38,7 @@ $img-path: "/assets/images/";
 $img-header-bg: url($img-path + "Header-Bg.jpg");
 $img-personal-logo: url($img-path + "Personal-Logo.svg");
 $img-personal-avatar: url($img-path + "sam_furlong_avatar.png");
+$img-bg-copy-book-map: url($img-path + "bg-copy-book-map.png");
 
 //
 // Fonts
@@ -94,3 +97,29 @@ $portflio-item-width: em(250);
 $portflio-item-min-height: em(250);
 $portflio-item-img-width: em(230);
 $portflio-item-img-height: em(180);
+
+//
+// Contact
+//
+$contact-basic-breakpoint-lookup: (
+  'mobile': (
+    'breakpoint': em(0),
+    'font-size': em(25),
+    'height': em(240)
+  ),
+  'mobile-landscape': (
+    'breakpoint': em(480),
+    'font-size': em(35),
+    'height': em(270)
+  ),
+  'mobile-landscape-lg': (
+    'breakpoint': em(620),
+    'font-size': em(45),
+    'height': em(290)
+  ),
+  'mobile-tablet': (
+    'breakpoint': em(800),
+    'font-size': em(55),
+    'height': em(300)
+  )
+);

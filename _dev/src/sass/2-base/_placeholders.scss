@@ -88,21 +88,23 @@
 	}
 }
 
+%bg-image{
+  background-repeat: no-repeat, no-repeat;
+	background-size:  cover;
+	background-position: 50% 50%;
+}
+
 //
 // Hero
 //
 %hero-bg-image {
 	background-image: $img-header-bg;
-	background-repeat: no-repeat, no-repeat;
-	background-size:  cover;
-	background-position: 50% 50%;
+  @extend %bg-image;
 }
 
 %hero-main-logo {
 	background-image: $img-personal-logo;
-	background-repeat: no-repeat, no-repeat;
-	background-size:  cover;
-	background-position: 50% 50%;
+  @extend %bg-image;
 }
 
 %hero-position-mobile {
