@@ -102,7 +102,7 @@ gulp.task('webpack-prod', shell.task(['NODE_ENV=production webpack']));
 // Task for building blog when something changed:
 // gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 // Or if you don't use bundle:
-gulp.task('jekyll-build', shell.task(['jekyll build --config _config.yml,_config_dev.yml --watch']));
+gulp.task('jekyll-build', shell.task(['jekyll build --watch']));
 
 // Task for serving blog with Browsersync
 gulp.task('browsersync-serve', function() {
