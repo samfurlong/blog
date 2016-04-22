@@ -18,6 +18,9 @@ github_username:  samfurlong
 # Build settings
 markdown: kramdown
 
+include: [
+  '_projects'
+]
 exclude: [
   '_dev',
   'node_modules',
