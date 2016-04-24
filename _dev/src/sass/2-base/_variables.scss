@@ -40,6 +40,13 @@ $img-personal-logo: url($img-path + "Personal-Logo.svg");
 $img-personal-avatar: url($img-path + "sam_furlong_avatar.png");
 $img-bg-copy-book-map: url($img-path + "bg-copy-book-map.png");
 
+// Portfolio images
+$img-path-portfolio: $img-path + "portfolio/";
+$img-portfolio-lookup: (
+  'ecalee': url($img-path-portfolio + "eCalee-Logo.svg"),
+  'prsuit': url($img-path-portfolio + "PRSUIT-Logo.svg"),
+);
+
 //
 // Fonts
 //

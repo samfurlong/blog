@@ -26,6 +26,43 @@
 .case-study-item-top{
 	width: $portflio-item-img-width;
 	height: $portflio-item-img-height;
+	margin: 0 auto 10px;
+  @extend %bg-image;
+}
+
+.case-study-item-bottom{
+	width: $portflio-item-img-width;
 	margin: 0 auto;
-	background: red;
+
+	h1{
+		margin: 0;
+		@extend %font-h4;
+	}
+
+	h2{
+		margin: 0;
+		@extend %font-body;
+	}
+
+	ul{
+		@extend %font-case-hover-small;
+		padding: 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			background: $grey;
+			padding: 6px;
+			border-radius: 3px;
+			margin: 2.5px;
+			@extend %outer-shadow-sm;
+		}
+	}
+
+}
+
+// Foreach loop to set the background images
+@each $key, $value in $img-portfolio-lookup{
+	.case-study-img-#{$key}{
+		background-image: $value;
+	}
 }
