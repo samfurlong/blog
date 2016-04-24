@@ -1,4 +1,8 @@
 ---
+project: prsuit
+title: PRSUIT
+subtitle: My Personal Music Project
+tags: ['Music Production', 'Songwriting']
 permalink: portfolio/prsuit/
 ---
 test

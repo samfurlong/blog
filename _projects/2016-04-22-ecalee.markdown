@@ -1,4 +1,13 @@
 ---
+project: ecalee
+title: eCalee
+subtitle: Your Ultimate Step by Step Online Calculator
+tags: [
+  'Angular JS',
+  'Laravel',
+  'Skecth',
+  'MathJax',
+]
 permalink: portfolio/ecalee/
 ---
 test

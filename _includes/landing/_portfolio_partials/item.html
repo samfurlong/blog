@@ -1,0 +1,24 @@
+{% for project in site.projects %}
+
+{% for page in site.pages %}
+  {% if page.project == project %}
+    <a href="{{ page.permalink }}">
+    <div class="case-study-item">
+      <div class="case-study-item-top case-study-img-{{ page.project }}"></div>
+
+      <div class="case-study-item-bottom">
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.subtitle }}</h2>
+        <ul>
+          {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    </a>
+  {% endif %}
+{% endfor %}
+
+
+{% endfor %}
