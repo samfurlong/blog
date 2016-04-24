@@ -9,5 +9,6 @@ tags: [
   'MathJax',
 ]
 permalink: portfolio/ecalee/
+layout: project
 ---
-test
+Case Study Coming Soon

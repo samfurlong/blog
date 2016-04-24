@@ -2,7 +2,8 @@
 project: prsuit
 title: PRSUIT
 subtitle: My Personal Music Project
-tags: ['Music Production', 'Songwriting']
+tags: ['Music Production', 'Songwriting', 'Ableton Live']
 permalink: portfolio/prsuit/
+layout: project
 ---
-test
+Case Study Coming Soon

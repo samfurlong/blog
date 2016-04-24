@@ -30,5 +30,9 @@ exclude: [
 
 projects: [
   'ecalee',
+  'personal-portfolio',
   'prsuit',
+  'google-startup-weekend',
+  'code_katas',
+  'cassin-marketing',
 ]
