@@ -1,4 +1,10 @@
 ---
 layout: default
 ---
-{{ content }}
+{% include landing/_hero.html %}
+
+<div class="project-copy">
+  {{ content }}
+</div>
+
+{% include landing/_contact_basic.html %}
