@@ -12,4 +12,15 @@ tags: [
 permalink: portfolio/ecalee/
 layout: project
 ---
-Case Study Coming Soon
+[eCalee.com](http://ecalee.com/)
+
+I built this application in my final year of college to help secondary school students with their math homework. It is an online calculator that can solve equations and display a full step-by-step guide on how the equation was solved. This can be an incredibly useful tool when practicing a new equation, because it gives the student instant feedback. Whereas in the past they would have had to wait until their teacher had corrected their homework, which could take days.
+
+[Try it for yourself here!](http://ecalee.com/)
+
+Technologies Used:
+
+ - PHP and the Laravel Framework for the backend
+ - AngularJS for the fronted
+ - Sass and Bourbon Mixins for the design
+ - Sketch for the initial wireframes and designs
