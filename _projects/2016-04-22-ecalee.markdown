@@ -4,7 +4,8 @@ title: eCalee
 subtitle: Your Ultimate Step by Step Online Calculator
 tags: [
   'Angular JS',
-  'Laravel',
+  'Laravel PHP',
+  'RESTful Api',
   'Skecth',
   'MathJax',
 ]

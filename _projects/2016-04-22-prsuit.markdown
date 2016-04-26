@@ -6,4 +6,6 @@ tags: ['Music Production', 'Songwriting', 'Ableton Live']
 permalink: portfolio/prsuit/
 layout: project
 ---
-Case Study Coming Soon
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/49049294&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+This is a passion project of mine that i absolutely love working on. I have been playing Guitar since i was 11 and learned how to record and make music in my free time when i was in college. I created a full EP which you can listen to at the top of this page.
