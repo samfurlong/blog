@@ -1,5 +1,5 @@
 ---
 permalink: /ecalee/
-layout: project
+layout: redirect
+redirect: http://ecalee-samfurlong.rhcloud.com/
 ---
-<meta http-equiv="refresh" content="0; url=http://ecalee-samfurlong.rhcloud.com/">

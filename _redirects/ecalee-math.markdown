@@ -1,5 +1,5 @@
 ---
 permalink: /math/
-layout: project
+layout: redirect
+redirect: /portfolio/ecalee/
 ---
-<meta http-equiv="refresh" content="0; url=/portfolio/ecalee/">
