@@ -1,14 +1,14 @@
 ---
-project: cassin-marketing
+project: "cassin-marketing"
 title: Cassin Marketing
 subtitle: A Marketing Agency Landing Page
-tags: [
-  'Wordpress',
-  'Divi Theme Builder',
-  'SassMeister',
-  'jQuery',
-]
-permalink: portfolio/cassin-marketing/
+tags: 
+  - Wordpress
+  - Divi Theme Builder
+  - SassMeister
+  - jQuery
+permalink: "portfolio/cassin-marketing/"
 layout: project
+published: true
 ---
-Case Study Coming Soon
+<a href="http://cassinmarketing.com/" target="_blank">Click here to view the live website</a>
