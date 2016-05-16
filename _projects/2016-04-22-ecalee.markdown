@@ -2,7 +2,7 @@
 project: ecalee
 title: eCalee
 subtitle: Your Ultimate Step by Step Online Calculator
-tags: 
+tags:
   - Angular JS
   - Laravel PHP
   - RESTful Api
@@ -12,11 +12,11 @@ permalink: portfolio/ecalee/
 layout: project
 published: true
 ---
-<a href="http://ecalee-samfurlong.rhcloud.com/" target="_blank">eCalee.com</a>
+<a href="/ecalee" target="_blank">eCalee.com</a>
 
 I built this application in my final year of college to help secondary school students with their math homework. It is an online calculator that can solve equations and display a full step-by-step guide on how the equation was solved. This can be an incredibly useful tool when practicing a new equation, because it gives the student instant feedback. Whereas in the past they would have had to wait until their teacher had corrected their homework, which could take days.
 
-<a href="http://ecalee-samfurlong.rhcloud.com/" target="_blank">Try it for yourself here!</a>
+<a href="/ecalee" target="_blank">Try it for yourself here!</a>
 
 Technologies Used:
 

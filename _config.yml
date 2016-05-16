@@ -19,7 +19,8 @@ github_username:  samfurlong
 markdown: kramdown
 
 include: [
-  '_projects'
+  '_projects',
+  '_redirects'
 ]
 exclude: [
   '_dev',
