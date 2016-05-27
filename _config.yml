@@ -32,9 +32,9 @@ exclude: [
 
 projects: [
   'ecalee',
+  'saas-starter',
   'personal-portfolio',
   'prsuit',
   'google-startup-weekend',
-  'code_katas',
   'cassin-marketing',
 ]
