@@ -17,8 +17,8 @@ published: true
   <img src="/assets/images/portfolio/ecalee/screen1.png" class="img-col-1"/>
 </div>
 <div class="image-group">
-  <img src="/assets/images/portfolio/ecalee/screen3.png" class="img-col-2"/>
   <img src="/assets/images/portfolio/ecalee/screen2.png" class="img-col-2"/>
+  <img src="/assets/images/portfolio/ecalee/screen3.png" class="img-col-2"/>
 </div>
 <div class="image-group">
   <img src="/assets/images/portfolio/ecalee/screen4.png" class="img-col-2"/>

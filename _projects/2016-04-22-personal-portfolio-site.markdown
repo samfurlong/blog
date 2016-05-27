@@ -13,4 +13,4 @@ tags: [
 permalink: portfolio/personal-portfolio-site/
 layout: project
 ---
-Case Study Coming Soon
+<a href="https://github.com/samfurlong/blog" target="_blank">View project repo on GitHub</a>
