@@ -1,0 +1,26 @@
+.image-group{
+	@extend %clearfix;
+	text-align: center;
+
+	.img-col-1, .img-col-2{
+		margin-bottom: $margin-md;
+		max-width: 100%;
+	}
+
+	@media (min-width: em(530) ){
+		.img-col-2{
+			width: 48%;
+			display: inline-block;
+
+			&:nth-child(odd){
+				float: left;
+			}
+
+			&:nth-child(even){
+				float: right;
+			}
+
+		}
+	}
+
+}

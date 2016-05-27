@@ -12,4 +12,4 @@ tags: [
 permalink: portfolio/Laravel-SaaS-Starter/
 layout: project
 ---
-Case Study Coming Soon
+<a href="https://github.com/samfurlong/Laravel-SaaS-Starter" target="_blank">View project on GitHub</a>

@@ -124,3 +124,11 @@
   max-width: $copy-width;
   margin: $margin-lg auto;
 }
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
