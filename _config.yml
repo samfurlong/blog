@@ -27,7 +27,8 @@ exclude: [
   '_dev',
   'node_modules',
   'gulpfile.js',
-  'package.json'
+  'package.json',
+  'webpack.config.js'
 ]
 
 projects: [
